@@ -11,6 +11,10 @@ a {
     color: var(--purple);
 }
 
+a.rss-link {
+    padding-left: 20px;
+}
+
 body {
     font-family: "Space Mono", monospace;
     margin: 0;

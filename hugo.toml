@@ -13,4 +13,8 @@ enableRobotsTXT = true
         style = 'dracula'
 
 [params]
+    [params.author]
+        name = 'Maria Solano'
+        email = 'majosolano99@gmail.com'
+
     description = 'Personal website of Maria Solano'
