@@ -33,10 +33,6 @@ div.highlight > div {
     overflow-x: scroll;
 }
 
-div.post-content {
-    text-align: justify;
-}
-
 div.social-icons {
     border-radius: 8px;
     border: 1px solid var(--grey);
