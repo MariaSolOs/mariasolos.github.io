@@ -112,6 +112,7 @@ nav.share-buttons ul {
     display: flex;
     list-style: none;
     margin: 0;
+    padding-left: 1rem;
 }
 
 p.post-date {
