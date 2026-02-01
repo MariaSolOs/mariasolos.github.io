@@ -2,4 +2,6 @@
     <h1 class="centered">{{ .Title }}</h1>
     <div>{{ .Content }}</div>
     <p class="post-date">{{ .PublishDate | time.Format ":date_long" }}</p>
+
+    {{ partial "share-buttons.html" . }}
 {{ end }}

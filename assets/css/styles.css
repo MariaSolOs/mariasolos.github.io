@@ -93,6 +93,27 @@ main {
     padding: 0 var(--vertical-padding);
 }
 
+nav.share-buttons {
+    align-items: center;
+    color: var(--light-grey);
+    display: flex;
+    margin: 5vh auto 3vh;
+    width: fit-content;
+}
+
+nav.share-buttons a, nav.share-buttons svg {
+    display: block;
+    height: 24px;
+    margin: 0 8px;
+    width: 24px;
+}
+
+nav.share-buttons ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
 p.post-date {
     color: var(--grey);
     font-style: italic;
