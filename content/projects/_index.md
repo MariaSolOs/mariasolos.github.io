@@ -12,3 +12,4 @@ I'm a core team member of Neovim. I've contributed several LSP features (native 
 - [Contributing to Neovim | NeovimConf 2023](https://youtu.be/GSjTiRlnUek)
 - [POV: LSP kind of sucks sometimes](https://youtu.be/JjWNw7aOAYU)
 - [Debugging your Neovim configuration](https://youtu.be/47UGK4NgvC8)
+- [Neovim 0.12 Release with the Core Team](https://youtu.be/EiBg91LTOYk?si=hnCR3bMUJUeAwQZV)
