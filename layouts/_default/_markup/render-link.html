@@ -1,6 +1,8 @@
-{{/* Opens external links in a new tab. */}}
-<a href="{{ .Destination | safeURL }}"
+{{/*
+    Opens external links in a new tab.
+    The trailing "{{- "" -}}" trims whitespace to avoid spaces after the hyperlink.
+*/}}
+{{- "" -}}<a href="{{ .Destination | safeURL }}"
     {{- if strings.HasPrefix .Destination "http" }} target="_blank" rel="noopener noreferrer"{{ end -}}
->
-    {{- .Text | safeHTML -}}
-</a>
+>{{- .Text | safeHTML -}}</a>
+{{- "" -}}
