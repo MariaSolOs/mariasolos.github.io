@@ -33,6 +33,31 @@
         <meta name="description" content="{{ or .Params.Description site.Params.description }}" />
     {{- end }}
 
+    <!-- Theme (set early to avoid flash of incorrect theme) -->
+    <script>
+        (function () {
+            var stored = localStorage.getItem("theme");
+            var theme = stored
+                ? stored
+                : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+            document.documentElement.setAttribute("data-theme", theme);
+        })();
+        function syncToggle(theme) {
+            var btn = document.querySelector(".theme-toggle");
+            if (btn) btn.setAttribute("aria-checked", theme === "dark" ? "true" : "false");
+        }
+        function toggleTheme() {
+            var current = document.documentElement.getAttribute("data-theme");
+            var next = current === "dark" ? "light" : "dark";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem("theme", next);
+            syncToggle(next);
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            syncToggle(document.documentElement.getAttribute("data-theme"));
+        });
+    </script>
+
     <!-- Styling -->
     {{ with resources.Get "css/styles.css" }}
         {{ if hugo.IsDevelopment }}
